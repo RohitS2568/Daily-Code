@@ -23,3 +23,20 @@
 // obj.num = 15;
 // console.log(obj);
 /// output: {num: 15}
+
+//6.
+// const arr = ["name"];
+// const obj = {};
+// obj.name = "Node";
+// obj[arr] = "React";
+// console.log(obj.name);
+///output: React
+
+//7.
+const arr = [{}, '2', 'hello'];
+delete arr[0];
+
+console.log(arr.length);
+console.log(arr);
+
+
