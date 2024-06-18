@@ -10,4 +10,5 @@ let count = 10;
 /// output: 11, 10
 
 
-
+(true+"")[3]
+//output: "e"

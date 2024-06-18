@@ -1,11 +1,12 @@
-const express = require("express");
-app = express();
-port = 3000;
+// const express = require('express');
+// app = express();
+// port = 3000;
 
+// app.get("/",(req,res)=>{
+//     res.send("hello");
+// });
 
-app.get('/',(req,res)=>{
-    res.send("Hello");
-})
+// app.listen(port,() =>{
+//     console.log("server start")
+// })
 
-app.listen(port, ()=>
-console.log("http://localhost:3000"));

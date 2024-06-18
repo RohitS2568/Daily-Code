@@ -1,12 +1,14 @@
 # Daily-Code
 
-Day-1 (6/06/2024)
-1.Nested
-  .Remove nested
-2.Timeintervel
-  .setTimeout
-3.var-const-let
-  .check output
-4.Index.js
-  .inner function/outer function 
+1.What is Hoisting
+2.What is middlewere
+3.What is Event
+4.What is Object
+5.Pacakge.json
+6.Authantication and authrization
+7.Microservices
+8.Callback
+9.Promises
+10.Async/await
+
 
