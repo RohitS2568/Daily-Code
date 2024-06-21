@@ -37,3 +37,36 @@
 // })
 
 
+
+
+// function reverseString(str){
+//     let charArray = str.split('');
+//     let reversedArray = charArray.reverse();
+//     let reverseString = reversedArray.join(' ');
+//     return reverseString;
+// }
+
+// console.log(reverseString("hello"))
+
+
+// function recusriveSum(arr, index = 0){
+//     if(index === arr.length) {
+//         return 0;
+
+//     }
+//     return arr[index]+ recusriveSum(arr, index+1);
+// }
+
+// let array = [1,2,3,4,5];
+// let sum = recusriveSum(array);
+// console.log(sum);
+// function recursiveSum(arr, index = 0){
+//     if(index === arr.length){
+//         return 0;
+//     }
+//     return arr[index]+ recursiveSum(arr,index+1);
+// }
+
+// let array = [1,2];
+// let sum = recursiveSum(array)
+// console.log(sum);

@@ -11,4 +11,8 @@
 9.Promises
 10.Async/await
 
+https://github.com/Devinterview-io/node-interview-questions?tab=readme-ov-file
+https://gist.github.com/paulfranco/9f88a2879b7b7d88de5d1921aef2093b
+https://github.com/Mohamed-Hashem/nodejs-interview-questions
+
 

@@ -33,10 +33,38 @@
 ///output: React
 
 //7.
-const arr = [{}, '2', 'hello'];
-delete arr[0];
+// const arr = [{}, '2', 'hello'];
+// delete arr[0];
 
-console.log(arr.length);
-console.log(arr);
+// console.log(arr.length);
+// console.log(arr);
 
+//8. const use case
 
+// const user = "rohit";
+// user = "xyz"
+// console.log(user);
+
+//output
+// user = "xyz"
+// TypeError: Assignment to constant variable.
+
+//9. var use case
+
+// var user = "rohit";
+
+// user = "xyz";
+// console.log(user)
+
+//output
+//xyz
+
+// 10.let use case
+
+// let user = "rohit";
+
+// user = "xyz";
+// console.log(user)
+
+//output
+//xyz
