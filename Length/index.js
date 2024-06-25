@@ -13,7 +13,7 @@ function allString(str){
 
 const sentance = "Hy rozar";
 const result = allString(sentance)
-console.log(result);
+// console.log(result);
 
 //2.----------Check Array First Word Length
 
@@ -35,4 +35,19 @@ function firstWord(str) {
 
 const sentence1 = "hy rozar"// Input string with leading and trailing spaces
 const result1 = firstWord(sentence1); // Call the function with the input string
-console.log(result1); // Outputs: 2 (length of "hy")
+//console.log(result1); // Outputs: 2 (length of "hy")
+
+
+//3.----------Check Array Last Word Length
+
+function lastWord(str){
+    str = str.trim();
+    const word = str.split(" ");
+    const checkWord = word[word.length - 1];
+    const wordLength = checkWord.length;
+    return wordLength;
+}
+
+const sentance3 = "hy rozar";
+const result3 = lastWord(sentance3);
+console.log(result3);

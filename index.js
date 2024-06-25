@@ -1,13 +1,4 @@
-//2.
-let count = 10;
-(function innerFunc() {
-    if(count === 10) {
-        let count = 11;
-        console.log(count);
-    }
-    console.log(count);
-})();
-/// output: 11, 10
+// const myArr = [1, 2, [3, [4, 5, 6], 7], 8];
+// const flattenedArr = myArr.flat(Infinity);
+// console.log(flattenedArr);
 
-(true+"")[3]
-//output: "e"

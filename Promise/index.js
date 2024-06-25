@@ -12,7 +12,7 @@ function fetchData() {
     });
 }
 
-// Call the fetchData function and handle the promise
+//2. Call the fetchData function and handle the promise
 fetchData()
     .then((data) => {
         console.log(data);
@@ -22,9 +22,8 @@ fetchData()
     });
 
 
- //2 Promise function
-
-    // Define the fetchData function
+ //3 Promise function
+// Define the fetchData function
 function fetchData() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -33,9 +32,23 @@ function fetchData() {
     });
 }
 
-// Call the fetchData function and handle the promise
+// 4. Call the fetchData function and handle the promise
 fetchData().then((data) => {
     console.log(data);
 }).catch((error) => {
     console.log(error);
 });
+
+function fetchData(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            resolve("data1");
+        }, 3000);
+    });
+}
+
+fetchData().then((data)=>{
+    console.log("data2");
+}).catch((error)=>{
+    console.log("error");
+})
