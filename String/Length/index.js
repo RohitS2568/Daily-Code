@@ -51,3 +51,21 @@ function lastWord(str){
 const sentance3 = "hy rozar";
 const result3 = lastWord(sentance3);
 console.log(result3);
+
+
+//4. Check Logest Word in this array
+
+function longestWord(sentence) {
+    const words = sentence.split(' ');
+    let longest = '';
+    for (const word of words) {
+        if (word.length > longest.length) {
+            longest = word;
+        }
+    }
+    return longest;
+  }
+  
+  
+  const sentence = "hay rohit hf hsaudhusahd sajhfddjsaj iashd"
+  console.log((longestWord(sentence)));
