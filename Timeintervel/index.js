@@ -210,3 +210,12 @@ for(let i = 0; i >= 10; i--){
     }, 3000);
 }
 //output: print 10 to 0 after 3 sec
+
+//20.------------------------------------------------------------------------------------------
+for(i = 0; i< 10; i++){
+  setTimeout(() => {
+      console.log(i);
+  }, 3000);
+}
+
+//output: 10 digit reated 10 time after 3 sec
