@@ -1,4 +1,4 @@
-//1.------------Find Anagram 
+//1.------------Find Anagram----------------------------------------------------------------------------------------------
 function findAnagrams(s, p) {
     const result = [];
     const targetCount = {};
@@ -37,7 +37,7 @@ function findAnagrams(s, p) {
 console.log(findAnagrams("cbaebabacd", "abc"));
 
 
-//2.-------------Group Anagrams
+//2.-------------Group Anagrams-------------------------------------------------------------------------------------------
   function groupAnagrams(strs) {
     const map = new Map();
     for (const str of strs) {
@@ -53,7 +53,7 @@ console.log(findAnagrams("cbaebabacd", "abc"));
   //output : [ [ 'r' ], [ 'o' ], [ 'h' ], [ 'i' ], [ 't' ] ]
 
 
-//3.-------------Anagram Have or Not
+//3.-------------Anagram Have or Not---------------------------------------------------------------------------------------
 function areAnagrams(str1, str2) {
     // Helper function to clean and sort the string
     function cleanString(str) {
@@ -77,7 +77,7 @@ b = "xyz";
 console.log(areAnagrams(a, b)); // false
 
 
-//4. Write code Get all Anagram Value
+//4. Write code Get all Anagram Value--------------------------------------------------------------------------------------
 function getAnagrams(str) {
     if (str.length <= 1) {
         return [str];
@@ -103,3 +103,53 @@ let anagrams = getAnagrams(myString);
 console.log(anagrams);
 //output ["abc", "acb", "bac", "bca", "cab", "cba"]
 
+
+//--------------------------------------------------------------------------------------------------------------------------
+
+function findAnagram(str1, str2){
+    if(str1.length = str2.length) return false;
+    
+    const s1 = str1.slice('').sort().join('')
+    const s2 = str2.slice('').sort().join('')
+    
+    return s1 === s2;
+  }
+  
+  let a1 = ['a','b','c']
+  let b1 = ['c','d','a']
+  console.log(findAnagram(a1,b1))
+
+  //output: false
+
+//-------------------------------------------------------------------------------------------------------------------------
+
+function findAngram(str1, str2){
+    const s1 = str1.split('').sort().join('');
+    const s2 = str2.split('').sort().join('');
+    
+    return s1 === s2;
+  }
+  
+  let a2 = "abc";
+  let b2 = "bca";
+  console.log(findAngram(a2,b2))
+  
+  //output: true
+
+
+  //------------------------------------------------------------------------------------------------------------------------
+
+  const getAnagrams = str =>
+    str.length <= 1 ? [str] :
+    [...str].flatMap((ch, i) =>
+      getAnagrams(str.slice(0, i)
+      + str.slice(i + 1))
+      .map(a => ch + a)
+    );
+  
+  // Example usage,,,,
+  console.log(getAnagrams("abc"));
+
+  //output: [ 'abc', 'acb', 'bac', 'bca', 'cab', 'cba' ]
+  
+  

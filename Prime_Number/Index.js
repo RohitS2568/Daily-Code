@@ -25,3 +25,5 @@ console.log(sumPrimes(20)); // Output: 77 (2 + 3 + 5 + 7 + 11 + 13 + 17 + 19)
 console.log(sumPrimes(0));  // Output: 0
 console.log(sumPrimes(1));  // Output: 0
 console.log(sumPrimes(2));  // Output: 2
+
+
