@@ -232,7 +232,29 @@ function maxSubarraySum(arr) {
 const nums1 = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
 console.log("Maximum Sum Subarray:", maxSubarraySum(nums1)); // Output: 6
 
+//11.-----First Non-Repeated Character
+function firstNonRepeatedChar(str) {
+    const charCount = {};
 
+    // Count occurrences of each character
+    for (let char of str) {
+        charCount[char] = (charCount[char] || 0) + 1;
+    }
+
+    // Find the first character with count 1
+    for (let char of str) {
+        if (charCount[char] === 1) {
+            return char;
+        }
+    }
+
+    return null; // If no non-repeated character found
+}
+
+// Example usage
+const input1 = "swiss";
+const result1 = firstNonRepeatedChar(input1);
+console.log(result1);  // Output: "w"
 
 
 
