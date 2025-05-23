@@ -257,4 +257,33 @@ const result1 = firstNonRepeatedChar(input1);
 console.log(result1);  // Output: "w"
 
 
+//12.------Max revenue
+function findMaxRevenue(salesData) {
+  const [days, numProducts] = salesData[0].split(" ").map(Number);
+  const revenues = salesData.slice(1).map(row => row.split(" ").map(Number));
 
+  const maxRevenues = [];
+  for (let i = 0; i < days; i++) {
+    maxRevenues.push(Math.max(...revenues[i]));
+  }
+  return maxRevenues.join(" ");
+}
+
+const salesData = [
+  "3 4",
+  "10 20 30 40",
+  "15 25 35 45",
+  "12 22 32 42"
+];
+
+const result2 = findMaxRevenue(salesData);
+console.log(result2); // Output: 40 45 42
+
+const salesData2 = [
+    "2 3",
+    "1 2 3",
+    "4 5 6"
+];
+
+const result3 = findMaxRevenue(salesData2);
+console.log(result3) // Output: 3 6
