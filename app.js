@@ -4,11 +4,6 @@
 // }
 // Message("world");
 
-//--------------------------------------------------------------------------
-// function checkArray(arr){
-//     return typrOf
-// }
-
 //---------------------------------------------------------------------------
 // function isObject(arr){
 //     return typeof arr === 'object'
@@ -26,10 +21,10 @@ function letScoping() {
     if (true) {
       var x = 2;
       x = 3;
-      console.log(x); // will print 2
+      console.log(x); // will print 3
     }
   
-    console.log(x); // will print 2, because var is function-scoped
+    console.log(x); // will print 3, because var is function-scoped
   }
   
   letScoping();

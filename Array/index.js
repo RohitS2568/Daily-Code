@@ -62,3 +62,13 @@ arr1.forEach(num => {
 console.log(countMap);
 //output Map(8) {1 => 1,2 => 2,3 => 1,4 => 3, 5 => 1,6 => 2, 7 => 1,8 => 1}
 
+
+function checkArray(arr){
+    return Array.isArray(arr);
+}
+
+// Example usage:
+console.log(checkArray([1, 2, 3])); // true
+console.log(checkArray("hello"));   // false
+console.log(checkArray({}));        // false
+

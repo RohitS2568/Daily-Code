@@ -1,18 +1,3 @@
-//9.---------------------------- Fizz Buzz
-
-for (let i = 1; i <= 100; i++) {
-    let output = ''; // Initialize output as an empty string
-    
-    // Check if the number is divisible by 3
-    if (i % 3 === 0) output += 'Fizz';
-    
-    // Check if the number is divisible by 5
-    if (i % 5 === 0) output += 'Buzz';
-    
-    // Print the output if it's not empty, otherwise print the number
-    console.log(output || i);
-}
-
 function mergeTwoLists(l1, l2) {
     if (l1 === null) return l2;
     if (l2 === null) return l1;
